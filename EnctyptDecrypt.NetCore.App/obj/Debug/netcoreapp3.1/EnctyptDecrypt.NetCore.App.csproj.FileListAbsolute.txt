@@ -64,3 +64,7 @@ C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCor
 C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCore.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCore.App\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCore.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCore.App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCore.App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCore.App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\developer\source\repos\EnctyptDecrypt.NetCore.App\EnctyptDecrypt.NetCore.App\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

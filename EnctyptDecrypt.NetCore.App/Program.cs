@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.DataProtection;
 
-using Microsoft.Extensions.DependencyInjection;
+
 using EnctyptDecrypt.NetCore.App.Security;
 
 namespace EnctyptDecrypt.NetCore.App
@@ -21,9 +21,13 @@ namespace EnctyptDecrypt.NetCore.App
             var builder = new HostBuilder()
                .ConfigureServices((hostContext, services) =>
                {
-                   services.AddDataProtection();
+                   services.AddDataProtection(opt =>
+                   {
+
+                   });
+                   
                    services.AddSingleton<DataProtectionPurposes>()
-                   .AddScoped<PasswordServices>();
+                   .AddScoped<PasswordServices>().AddScoped<IdentityModelEncryptionDecryption>();
                     
 
                }).ConfigureLogging(logbuilder =>
@@ -41,8 +45,12 @@ namespace EnctyptDecrypt.NetCore.App
                 var appLogger = services.GetRequiredService<ILoggerFactory>().CreateLogger("Program");
                 try
                 {
+                    var test = services.GetRequiredService<IdentityModelEncryptionDecryption>();
+
+                    test.Test();
+
                     var pwdSvc=services.GetRequiredService<PasswordServices>();
-                    Console.WriteLine("Please enter plaintext password to enctype:");
+                    Console.WriteLine("Please enter plaintext password to Encrypt:");
                     var plainTextPwd=Console.ReadLine();
                     
                     var enctypted = pwdSvc.EncryptString(plainTextPwd);
